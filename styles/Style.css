@@ -80,3 +80,12 @@ nav ul li a:hover {
 .banner-img {
   width: 100%;
 }
+
+
+/* Responsive media query */
+
+@media screen and (max-width: 576px) {
+    .navber, nav ul {
+        flex-direction: column;
+    }
+}
