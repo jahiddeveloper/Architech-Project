@@ -215,45 +215,43 @@ nav ul li a:hover {
 /* Some */
 
 .some {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 .some-title {
-    font-weight: bold;
-    font-size: 2.8rem;
-    margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-bottom: 0px;
 }
 .some-description {
-    margin-top: 24px;
-    font-size: 1rem;
-    font-weight: 400;
-    color: gray;
-    line-height: 30px;
+  margin-top: 24px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: gray;
+  line-height: 30px;
 }
 .box-container {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
 }
 .box {
-    border: 1px solid #FF900E;
-    text-align: center;
-    padding: 36px 60px;
-    border-radius: 7px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding: 36px 60px;
+  border-radius: 7px;
 }
 .box-title {
-    margin: 10px 0px 0px 0px;
-    font-size: 2.8rem;
-    font-weight: 600;
+  margin: 10px 0px 0px 0px;
+  font-size: 2.8rem;
+  font-weight: 600;
 }
 .box-sub {
-    margin-top: 5px;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: gray;
-    width: 169px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: gray;
+  width: 169px;
+  margin: 0 auto;
 }
-
-
 
 /* Responsive media query */
 
@@ -261,7 +259,8 @@ nav ul li a:hover {
   .navber,
   nav ul,
   .team-container,
-  .features-container {
+  .features-container,
+  .box-container {
     flex-direction: column;
   }
   .team-img {
@@ -291,5 +290,19 @@ nav ul li a:hover {
   }
   .right-img {
     max-width: 100%;
+  }
+
+  /* Some */
+  .some-title {
+    text-align: center;
+  }
+  .some-description {
+    text-align: center;
+  }
+  .box-container {
+    margin-top: 50px;
+  }
+  .box {
+    margin: 5px 20px;
   }
 }
