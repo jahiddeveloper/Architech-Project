@@ -99,9 +99,9 @@ nav ul li a:hover {
   align-items: center;
 }
 .team-img {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 .team-title {
   font-size: 45px;
@@ -143,12 +143,82 @@ nav ul li a:hover {
   transition-duration: 0.4s;
 }
 
+/* Features */
+
+.features {
+  margin-top: 110px;
+}
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+.left-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  border-left: 6px solid #ff900e;
+  padding-left: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-bottom: 0px;
+}
+.left-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: gray;
+  line-height: 30px;
+  margin-top: 24px;
+  width: 586px;
+}
+.cart {
+  box-shadow: 0px 0px 1px black;
+  border-radius: 10px;
+  padding: 10px 33px;
+  margin-top: 20px;
+}
+.cart-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.cart-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: gray;
+  margin-top: 10px;
+  line-height: 30px;
+}
+.img-container {
+  background-color: #ff900e;
+  color: white;
+  width: 300px;
+  padding: 20px 15px;
+  border-radius: 15px;
+  position: relative;
+  bottom: 80px;
+  right: 60px;
+}
+.year {
+  font-size: 3rem;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+  font-weight: bold;
+}
+.ex {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 15px;
+}
+
 /* Responsive media query */
 
 @media screen and (max-width: 576px) {
   .navber,
   nav ul,
-  .team-container {
+  .team-container,
+  .features-container {
     flex-direction: column;
   }
   .team-img {
@@ -166,5 +236,17 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* Feature */
+  .left-description {
+    width: 400px;
+    margin-left: 30px;
+  }
+  .img-container {
+    display: none;
+  }
+  .right-img {
+    max-width: 100%;
   }
 }
